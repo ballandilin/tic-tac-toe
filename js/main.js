@@ -83,5 +83,7 @@ let caseUsed = (c) => {
  * @param {*} c the case we check
  */
 let checkMyNeighbor = (c) => {
+    // for () {
 
+    // }
 }

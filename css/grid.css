@@ -22,14 +22,14 @@
 .case {
     width: 5rem;
     height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid white;
     margin: 0.5rem;
     box-sizing: border-box;
-    text-align: center;
-    justify-content: center;
-    
     color: white;
-    font-size: 5vw;
+    font-size: 100%;
 }
 
 
