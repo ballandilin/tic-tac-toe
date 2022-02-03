@@ -2,7 +2,15 @@ var t_case = document.getElementsByClassName("case");
 var dis = document.getElementById('dis');
 let move = ["x", "o"];
 let turn = 0;
+let map = 
+        [
+            ["_", "_", "_"],
+            ["_", "_", "_"],
+            ["_", "_", "_"],
+        ];
 
+
+console.table(map);
 
 /**
  * We check every click on the tic tac toe grid
@@ -86,4 +94,24 @@ let checkMyNeighbor = (c) => {
     // for () {
 
     // }
+}
+
+
+// let getNeighbor = (c) => {
+//     let n = [];
+//     for () {
+//         n.push()
+//     }
+    
+//     return n;
+// }
+
+
+/**
+ * Reset the grid
+ */
+let reset = () => {
+    for (const c in t_case) {
+        t_case[c].innerText = "";
+    }
 }
