@@ -1,3 +1,4 @@
+
 var t_case = document.getElementsByClassName("case");
 var dis = document.getElementById('dis');
 let move = ["x", "o"];
@@ -102,14 +103,14 @@ let checkMyNeighbor = (c) => {
 }
 
 
-// let getNeighbor = (c) => {
-//     let n = [];
-//     for () {
-//         n.push()
-//     }
+let getNeighbor = (c) => {
+    let n = [];
+    for () {
+        n.push()
+    }
     
-//     return n;
-// }
+    return n;
+}
 
 
 /**
@@ -119,4 +120,42 @@ let reset = () => {
     for (const c in t_case) {
         t_case[c].innerText = "";
     }
+}
+
+let getCoordBox = (c) => {
+    return [c.id[0], c.id[1]];
+}
+
+
+let getUpperBox = (c) => {
+    let x, y = getCoordBox(c);
+}
+
+
+let getRightBox = () => {
+    let x, y = getCoordBox(c);
+}
+
+let getLeftBox = () => {
+    let x, y = getCoordBox(c);
+}
+
+let getLowerBox = () => {
+    let x, y = getCoordBox(c);
+}
+
+let getDiagUpRightBox = () => {
+    let x, y = getCoordBox(c);
+}
+
+let getDiagLowRightBox = () => {
+    let x, y = getCoordBox(c);
+}
+
+let getDiagUpLeftBox = () => {
+    let x, y = getCoordBox(c);
+}
+
+let getDiagLowLeftBox = () => {
+    let x, y = getCoordBox(c);
 }
