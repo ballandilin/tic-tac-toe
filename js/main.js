@@ -2,7 +2,7 @@ var t_case = document.getElementsByClassName("case");
 var dis = document.getElementById('dis');
 let move = ["x", "o"];
 let turn = 0;
-let map = 
+let t_map = 
         [
             ["_", "_", "_"],
             ["_", "_", "_"],
@@ -10,16 +10,21 @@ let map =
         ];
 
 
-console.table(map);
+console.table(t_map);
 
 /**
  * We check every click on the tic tac toe grid
  */
 document.addEventListener("click", (e) => {
     let el = e.target;
+    let pmove = "";
     if (el.classList.contains("case") && caseUsed(el)) {
-        playerMove(e.target, move[turn++ % 2]);
-        displayMap(getMap());
+        let ids = el.id;
+        pmove = move[turn++ % 2];
+        playerMove(e.target, pmove);
+        t_map[ids[0]][ids[1]] = pmove;
+        // displayMap(getMap());
+        console.table(t_map);
     }
 }, false);
 
